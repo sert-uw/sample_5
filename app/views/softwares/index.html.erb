@@ -9,6 +9,8 @@
       <th>値段</th>
       <th>メーカー</th>
       <th>ハード</th>
+      <th>作成日時</th>
+      <th>更新日時</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +22,8 @@
         <td><%= software.price %></td>
         <td><%= software.maker %></td>
         <td><%= software.hard %></td>
+        <td><%= software.created_at.in_time_zone('Tokyo').strftime('%Y/%m/%d %H:%M') %></td>
+        <td><%= software.updated_at.in_time_zone('Tokyo').strftime('%Y/%m/%d %H:%M') %></td>
         <td><%= link_to 'Show', software %></td>
         <td><%= link_to 'Edit', edit_software_path(software) %></td>
         <td><%= link_to 'Destroy', software, method: :delete, data: { confirm: 'Are you sure?' } %></td>
