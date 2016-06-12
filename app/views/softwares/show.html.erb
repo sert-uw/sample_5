@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>名前:</strong>
   <%= @software.name %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>値段:</strong>
   <%= @software.price %>
 </p>
 
 <p>
-  <strong>Maker:</strong>
+  <strong>メーカー:</strong>
   <%= @software.maker %>
 </p>
 
 <p>
-  <strong>Hard:</strong>
+  <strong>ハード:</strong>
   <%= @software.hard %>
 </p>
 
-<%= link_to 'Edit', edit_software_path(@software) %> |
-<%= link_to 'Back', softwares_path %>
+<%= link_to '編集', edit_software_path(@software) %> |
+<%= link_to '戻る', softwares_path %>
